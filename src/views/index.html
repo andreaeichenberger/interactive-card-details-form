@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Pay with a card</title>
+</head>
+<body>
+    <section>
+        
+    </section>
+    <main>
+        <form action="/enterCard" method="POST">
+
+            <label for="cardholderName">CARDHOLDER NAME</label>
+            <input type="text" name="cardholderName" id="cardholderName">
+
+            <label for="cardName">CARD NUMBER</label>
+            <input type="number" name="cardName" id="cardName">
+
+            <label for="expDate">EXP. DATE (MM/YY)</label>
+            <input type="number" name="dateMonth" id="expDate">
+            <input type="number" name="dateYear" id="expDate">
+
+            <label for="cvc">CVC</label>
+            <input type="number" name="cvc" id="cvc">
+
+            <button type="submit">Confirm</button>
+        </form>
+    </main>
+</body>
+</html>
