@@ -17,39 +17,34 @@ COLORS
 body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 2px;
 }
 
 /* ---CARDS IMAGES--- */
-.boxCardsImages {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
 
 .backgroundCards {
   width: 100%;
 }
 
-.cards {
+.boxCardsImages {
+  position: relative;
+}
+
+.card {
   position: absolute;
   width: 70%;
 }
 
-.cardData {
-  color: hsl(0, 0%, 100%);
-}
-
 .cardFront {
   z-index: 2;
-  top: 52%;
+  top: 51%;
   left: 5%;
 }
 
 .cardBack {
   z-index: 1;
-  top: 15%;
+  top: 16%;
   right: 5%;
 }
 
@@ -57,6 +52,20 @@ img {
   width: 100%;
 }
 
+.boxCardData {
+  position: relative;
+}
+
+.cardLogo {
+  position: absolute;
+  bottom: 50%;
+  z-index: 3;
+  width: 20%;
+}
+
+.cardNumber {
+  width: 100%;
+}
 /* ----------------------------------- */
 
 main {
@@ -67,14 +76,16 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  justify-content: center;
+  margin: 15% 5% 5%;
 }
 
 .field {
-  width: 100%;
+  width: 93%;
+  align-self: center;
+  margin: 3% 7%;
   display: flex;
   flex-direction: column;
-  margin: 3%;
 }
 
 label {
@@ -84,10 +95,10 @@ label {
 
 input {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   color: hsl(278, 68%, 11%);
-  border: 2px solid hsl(270, 3%, 87%);
-  border-radius: 4px;
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 7px;
   padding: 8px;
 }
 
@@ -96,7 +107,11 @@ input {
 }
 
 input:focus {
-  border: 2px solid hsl(278, 68%, 11%);
+  border: 1px solid hsl(278, 68%, 11%);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  display: none;
 }
 
 .boxWithTwoField {
@@ -109,7 +124,8 @@ input:focus {
 .boxField {
   display: flex;
   flex-direction: column;
-  width: 46%;
+  justify-content: end;
+  width: 47%;
 }
 
 .boxInputs {
@@ -118,14 +134,14 @@ input:focus {
 
 .insideInput {
   width: 50%;
-  margin-right: 5%;
+  margin-right: 4%;
 }
 
 /* ---BUTTON--- */
 button {
   background-color: hsl(278, 68%, 11%);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: hsl(0, 0%, 100%);
   padding: 15px;
   text-align: center;

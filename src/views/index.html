@@ -12,25 +12,43 @@
     <title>Pay with a card</title>
   </head>
   <body>
+    <!-- Box background + 2 cards -->
     <div class="boxCardsImages">
+      <!-- Background -->
       <img
         class="backgroundCards"
         src="../../public/bg-main-mobile.png"
         alt="Background of the card's section"
       />
 
-      <div class="cards cardFront">
-        <img src="../../public/bg-card-front.png" alt="Card's front" />
-        <img src="../../public/card-logo.svg" alt="Card's logo" />
-        <p class="cardData">0000 0000 0000 0000</p>
-        <p class="cardData">Jane Appleseed</p>
+      <img
+        class="card cardFront"
+        src="../../public/bg-card-front.png"
+        alt="Card's front"
+      />
+
+      <!-- Box card data front 
+      <div class="boxCardData">
+        <img
+          class="cardData cardLogo"
+          src="../../public/card-logo.svg"
+          alt="Card's logo"
+        />
+        <p class="cardData cardNumber">0000 0000 0000 0000</p>
+        <p class="cardData cardName">Jane Appleseed</p>
         <p class="cardData">00/00</p>
       </div>
-      <div class="cards cardBack">
-        <img src="../../public/bg-card-back.png" alt="Card's back" />
+      -->
+      <img
+        class="card cardBack"
+        src="../../public/bg-card-back.png"
+        alt="Card's back"
+      />
+      <!-- Box card data back 
+      <div class="boxCardData">
         <p class="cardData">000</p>
       </div>
-    </div>
+    --></div>
     <main>
       <form action="/enterCard" method="POST">
         <div class="field">
