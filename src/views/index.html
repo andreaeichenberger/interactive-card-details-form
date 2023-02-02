@@ -12,43 +12,44 @@
     <title>Pay with a card</title>
   </head>
   <body>
-    <!-- Box background + 2 cards -->
-    <div class="boxCardsImages">
-      <!-- Background -->
+    <div class="containerCards">
       <img
         class="backgroundCards"
         src="../../public/bg-main-mobile.png"
         alt="Background of the card's section"
       />
 
-      <img
-        class="card cardFront"
-        src="../../public/bg-card-front.png"
-        alt="Card's front"
-      />
+      <div class="boxCard boxFront">
+        <div class="boxData">
+          <img
+            class="card cardFront"
+            src="../../public/bg-card-front.png"
+            alt="Card's front"
+          />
+          <img
+            class="cardData cardLogo"
+            src="../../public/card-logo.svg"
+            alt="Card's logo"
+          />
+          <p class="cardData cardNumber">0000 0000 0000 0000</p>
+          <p class="cardData cardName">JANE APPLESEED</p>
+          <p class="cardData cardDate">00/00</p>
+        </div>
+      </div>
+      <div class="boxCard boxBack">
+        <
 
-      <!-- Box card data front 
-      <div class="boxCardData">
-        <img
-          class="cardData cardLogo"
-          src="../../public/card-logo.svg"
-          alt="Card's logo"
-        />
-        <p class="cardData cardNumber">0000 0000 0000 0000</p>
-        <p class="cardData cardName">Jane Appleseed</p>
-        <p class="cardData">00/00</p>
+        <div class="boxData">
+          <img
+            class="card cardBack"
+            src="../../public/bg-card-back.png"
+            alt="Card's back"
+          />
+          <p class="cardData cardCvc">000</p>
+        </div>
       </div>
-      -->
-      <img
-        class="card cardBack"
-        src="../../public/bg-card-back.png"
-        alt="Card's back"
-      />
-      <!-- Box card data back 
-      <div class="boxCardData">
-        <p class="cardData">000</p>
-      </div>
-    --></div>
+    </div>
+
     <main>
       <form action="/enterCard" method="POST">
         <div class="field">
